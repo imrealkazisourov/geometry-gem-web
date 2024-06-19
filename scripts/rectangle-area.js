@@ -16,7 +16,8 @@ function rectangleCalculateArea() {
     const rectangleArea = rectangleLength * rectangleWidth;
 
     //display the area of rectangle 
-    
+    const rectangleAreaSpan = document.getElementById('rectangle-area');
+    rectangleAreaSpan.innerText = rectangleArea;
 
 
 }
