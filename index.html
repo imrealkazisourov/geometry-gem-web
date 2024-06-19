@@ -26,7 +26,7 @@
                         <p class="text-center">Area (A) = 0.5 x b x h</p>
                         <div>
                             <input id="triangle-base" class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="b">
-                            <span class="mr-4 ml-10">cm</span>
+                            <span class="mr-4 ml-2">cm</span>
                             <input id="triangle-height" class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="h">
                             <span>cm</span>
                         </div>
@@ -43,10 +43,18 @@
                 <div class="card w-96 bg-base-100 shadow-xl">
                     <figure><img src="images/rectangle.png" alt="rectangle" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Rectangle</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <h2 class="card-title justify-center">Rectangle</h2>
+                        <p class="text-center">Area (A) = W X I</p>
+                        <div class="flex">
+                            <!-- input of rectangle length  -->
+                            <input id="rectangle-length" type="text" class="w-24 text-2xl p-2 rounded-sm" placeholder="Length">
+                            <span class="mr-4 ml-2">cm</span>
+                            <!-- input of rectangle width  -->
+                            <input id="rectangle-width" type="text" class="w-24 text-2xl p-2 rounded-sm" placeholder="Width">
+                            <span class="mr-4 ml-2">cm</span>
+                        </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="rectangleCalculateArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -103,6 +111,7 @@
         </div>
     </main>
     <script src="scripts/triangle-calculate.js"></script>
+    <script src="scripts/rectangle-area.js"></script>
 </body>
 
 </html>
